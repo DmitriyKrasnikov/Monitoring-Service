@@ -9,86 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6997d869-218e-4326-bb24-a8024bf23d2e" name="Changes" comment="Добавлен .jar файл">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/MeterServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/UserStorageImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monitoring-Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Monitoring-Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/element-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/jquery-ui.overrides.css" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/jquery-ui.overrides.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/legal/ADDITIONAL_LICENSE_INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/legal/ASSEMBLY_EXCEPTION" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/legal/ASSEMBLY_EXCEPTION" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/legal/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/legal/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/legal/jquery.md" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/legal/jquery.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/legal/jqueryUI.md" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/legal/jqueryUI.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/model/readings/MeterReadings.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/model/readings/MeterReadings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/model/readings/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/model/readings/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/model/readings/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/model/readings/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/model/user/User.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/model/user/User.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/model/user/dto/UserDto.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/model/user/dto/UserDto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/model/user/dto/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/model/user/dto/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/model/user/dto/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/model/user/dto/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/model/user/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/model/user/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/model/user/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/model/user/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/server/HttpMeterServer.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/server/HttpMeterServer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/server/UriEnum.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/server/UriEnum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/server/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/server/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/server/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/server/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/service/MeterService.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/service/MeterService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/service/MeterServiceImpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/service/MeterServiceImpl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/service/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/service/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/service/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/service/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/storage/UserStorage.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/storage/UserStorage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/storage/UserStorageImpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/storage/UserStorageImpl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/storage/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/storage/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/storage/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/storage/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/utils/LoggerConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/utils/LoggerConfig.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/utils/ServiceFactory.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/utils/ServiceFactory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/utils/Token.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/utils/Token.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/utils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/utils/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/main/java/utils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/main/java/utils/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/module-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/module-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/package-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/resources/glass.png" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/resources/glass.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/resources/x.png" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/resources/x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/jquery-3.6.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/script-dir/jquery-3.6.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/script-dir/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/tag-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/tag-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javadoc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javadoc/type-search-index.js" afterDir="false" />
+    <list default="true" id="6997d869-218e-4326-bb24-a8024bf23d2e" name="Changes" comment="Добавлен .jar файл, postman тесты, unit тесты, инструкция по развёртыванию">
       <change beforePath="$PROJECT_DIR$/src/main/java/server/HttpMeterServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/HttpMeterServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/LoggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/LoggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/UserStorageImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/UserStorageImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +131,14 @@
       <option name="presentableId" value="Default" />
       <updated>1706293708422</updated>
     </task>
+    <task id="LOCAL-00001" summary="Добавлен .jar файл, postman тесты, unit тесты, инструкция по развёртыванию">
+      <created>1706456158930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706456158930</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,5 +151,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавлен .jar файл, postman тесты, unit тесты, инструкция по развёртыванию" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен .jar файл, postman тесты, unit тесты, инструкция по развёртыванию" />
   </component>
 </project>

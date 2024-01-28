@@ -247,16 +247,3 @@ public class HttpMeterServer {
         System.out.println("Сервер остановили на " + PORT + " порту");
     }
 }
-/*
-post /meter/register
-get /meter/login
-
-get /meter/logout
-get /meter/readings
-post /meter/readings
-get /meter/readings?month=may
-get /meter/readings/history
-
-get /meter/readings/all
-
-*/

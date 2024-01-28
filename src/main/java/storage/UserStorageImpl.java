@@ -2,7 +2,6 @@ package main.java.storage;
 
 import main.java.model.readings.MeterReadings;
 import main.java.model.user.User;
-import main.java.service.MeterService;
 
 import java.time.Month;
 import java.util.Collection;
