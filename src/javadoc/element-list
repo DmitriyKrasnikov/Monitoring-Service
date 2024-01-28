@@ -1,0 +1,8 @@
+main.java
+main.java.model.readings
+main.java.model.user
+main.java.model.user.dto
+main.java.server
+main.java.service
+main.java.storage
+main.java.utils
