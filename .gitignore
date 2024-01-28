@@ -1,5 +1,5 @@
 ### IntelliJ IDEA ###
-out/
+!out/artifacts/Monitoring_Service_jar
 !**/src/main/**/out/
 !**/src/test/**/out/
 

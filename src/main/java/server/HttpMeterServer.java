@@ -241,6 +241,11 @@ public class HttpMeterServer {
             logger.info("Sending response : " + responseString + " with a code: " + responseCode);
         }
     }
+
+    public void stop() {
+        server.stop(0);
+        System.out.println("Сервер остановили на " + PORT + " порту");
+    }
 }
 /*
 post /meter/register

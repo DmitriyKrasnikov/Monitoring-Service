@@ -18,9 +18,11 @@ public class LoggerConfig {
         consoleHandler.setLevel(Level.ALL);
         logger.addHandler(consoleHandler);
         logger.setLevel(Level.ALL);
+        logger.setUseParentHandlers(false); // Отключаем использование родительских обработчиков
     }
 
     public static Logger getLogger() {
         return logger;
     }
 }
+
