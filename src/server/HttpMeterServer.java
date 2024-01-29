@@ -1,16 +1,16 @@
-package main.java.server;
+package server;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;
-import main.java.model.readings.MeterReadings;
-import main.java.model.user.dto.UserDto;
-import main.java.service.MeterService;
-import main.java.utils.LoggerConfig;
-import main.java.utils.ServiceFactory;
-import main.java.utils.Token;
+import model.readings.MeterReadings;
+import model.user.dto.UserDto;
+import service.MeterService;
+import utils.LoggerConfig;
+import utils.ServiceFactory;
+import utils.Token;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

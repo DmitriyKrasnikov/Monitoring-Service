@@ -1,9 +1,9 @@
-package main.java.service;
+package service;
 
-import main.java.model.readings.MeterReadings;
-import main.java.model.user.dto.UserDto;
-import main.java.storage.UserStorage;
-import main.java.utils.ServiceFactory;
+import model.readings.MeterReadings;
+import model.user.dto.UserDto;
+import storage.UserStorage;
+import utils.ServiceFactory;
 
 import java.time.Month;
 import java.util.Collection;

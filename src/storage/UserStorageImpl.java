@@ -1,7 +1,7 @@
-package main.java.storage;
+package storage;
 
-import main.java.model.readings.MeterReadings;
-import main.java.model.user.User;
+import model.readings.MeterReadings;
+import model.user.User;
 
 import java.time.Month;
 import java.util.Collection;

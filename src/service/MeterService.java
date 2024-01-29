@@ -1,7 +1,7 @@
-package main.java.service;
+package service;
 
-import main.java.model.readings.MeterReadings;
-import main.java.model.user.dto.UserDto;
+import model.readings.MeterReadings;
+import model.user.dto.UserDto;
 
 import java.time.Month;
 import java.util.Collection;

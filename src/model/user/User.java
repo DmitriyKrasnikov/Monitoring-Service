@@ -1,6 +1,6 @@
-package main.java.model.user;
+package model.user;
 
-import main.java.model.readings.MeterReadings;
+import model.readings.MeterReadings;
 
 import java.time.Month;
 import java.util.Map;

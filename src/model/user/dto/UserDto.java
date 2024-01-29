@@ -1,4 +1,4 @@
-package main.java.model.user.dto;
+package model.user.dto;
 
 /**
  * Класс UserDto представляет собой модель данных для передачи информации о пользователе.

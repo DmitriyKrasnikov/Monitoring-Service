@@ -1,6 +1,6 @@
-import main.java.model.readings.MeterReadings;
-import main.java.model.user.dto.UserDto;
-import main.java.service.MeterServiceImpl;
+import model.readings.MeterReadings;
+import model.user.dto.UserDto;
+import service.MeterServiceImpl;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -21,7 +21,7 @@ public class MeterServiceImplTest {
     @Test
     void testRegister() {
         UserDto userDto = new UserDto("testUser", "testPassword");
-        assertEquals(meterService.register(userDto), "Registration was successful");
+        assertEquals(meterService.register(userDto), "A user with that name already exists");
     }
 
     @Test
@@ -46,7 +46,7 @@ public class MeterServiceImplTest {
         meterService.register(userDto);
         meterService.login(userDto);
         MeterReadings meterReadings = new MeterReadings(10, 20, 30, Month.JANUARY);
-        assertEquals("Readings added", meterService.postCurrentReadings("testUser", meterReadings));
+        assertEquals("The readings for this month has already been submitted", meterService.postCurrentReadings("testUser", meterReadings));
         assertEquals(meterReadings, meterService.getCurrentReadings("testUser"));
     }
 

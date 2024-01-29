@@ -1,6 +1,4 @@
-package main.java;
-
-import main.java.server.HttpMeterServer;
+import server.HttpMeterServer;
 
 import java.io.IOException;
 

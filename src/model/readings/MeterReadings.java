@@ -1,4 +1,4 @@
-package main.java.model.readings;
+package model.readings;
 
 import java.time.Month;
 

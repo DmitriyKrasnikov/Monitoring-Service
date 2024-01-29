@@ -1,4 +1,4 @@
-package main.java.server;
+package server;
 
 /**
  * Enum UriEnum представляет собой набор возможных URI для обработки HTTP-запросов.

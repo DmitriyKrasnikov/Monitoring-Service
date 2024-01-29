@@ -1,10 +1,10 @@
-package main.java.utils;
+package utils;
 
 import com.google.gson.Gson;
-import main.java.service.MeterService;
-import main.java.service.MeterServiceImpl;
-import main.java.storage.UserStorage;
-import main.java.storage.UserStorageImpl;
+import service.MeterService;
+import service.MeterServiceImpl;
+import storage.UserStorage;
+import storage.UserStorageImpl;
 
 /**
  * Класс ServiceFactory предоставляет статические методы для получения экземпляров сервисов.

@@ -1,5 +1,5 @@
-import main.java.model.readings.MeterReadings;
-import main.java.storage.UserStorageImpl;
+import model.readings.MeterReadings;
+import storage.UserStorageImpl;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 import java.time.Month;
