@@ -52,16 +52,19 @@ public class HttpMeterServer {
     /**
      * Обрабатывает HTTP-запросы.
      * @param httpExchange объект HttpExchange, представляющий HTTP-запрос
-     * @throws IOException если происходит ошибка ввода-вывода
      */
-    public void handle(HttpExchange httpExchange) throws IOException {
-        String uri = httpExchange.getRequestURI().getPath().replaceFirst("/meter/", "");
-        UriEnum uriEnum = UriEnum.getUriEnum(uri);
+    public void handle(HttpExchange httpExchange) {
+        try (httpExchange) {
+            String uri = httpExchange.getRequestURI().getPath().replaceFirst("/meter/", "");
+            UriEnum uriEnum = UriEnum.getUriEnum(uri);
 
-        if (uriEnum == UriEnum.REGISTER || uriEnum == UriEnum.LOGIN) {
-            handleLoginOrRegister(uriEnum, httpExchange);
-        } else {
-            handleOtherRequests(uriEnum, httpExchange);
+            if (uriEnum == UriEnum.REGISTER || uriEnum == UriEnum.LOGIN) {
+                handleLoginOrRegister(uriEnum, httpExchange);
+            } else {
+                handleOtherRequests(uriEnum, httpExchange);
+            }
+        } catch (IOException e) {
+            System.out.println("Ошибка при обработке запроса: " + e.getMessage());
         }
     }
 
