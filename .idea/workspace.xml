@@ -9,9 +9,175 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6997d869-218e-4326-bb24-a8024bf23d2e" name="Changes" comment="Изменил структуру и тесты">
+    <list default="true" id="6997d869-218e-4326-bb24-a8024bf23d2e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_api_3_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_3_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_zerodep_3_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_5_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_41_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_17_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_liquibase_liquibase_core_4_25_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rnorth_duct_tape_duct_tape_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_database_commons_1_17_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_jdbc_1_17_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_junit_jupiter_1_17_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_postgresql_1_17_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_testcontainers_1_17_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/HttpMeterClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/audit/AuditStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/audit/AuditStorageImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/mapper/MeterReadingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/readings/ReadingsStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/readings/ReadingsStorageImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/user/UserStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/user/UserStorageImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/audit/ActionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/audit/AuditLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/readings/MeterType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/audit/AuditService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/audit/AuditServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/reading/MeterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/reading/MeterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DBConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DBInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/liquibase.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/main-changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/v1/app/v1-app-create-tables.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/v1/app/v1-app-insert-data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/v1/service/v1-service-create-tables.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/v1/service/v1-service-insert-data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/v1/v1-accumulate-changelog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AuditStorageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ReadingsStorageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserStorageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testResources/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monitoring-Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Monitoring-Service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-15.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/model/readings/MeterReadings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/model/readings/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/model/readings/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/model/user/User.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/model/user/dto/UserDto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/model/user/dto/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/model/user/dto/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/model/user/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/model/user/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/server/HttpMeterServer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/server/UriEnum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/server/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/server/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/service/MeterService.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/service/MeterServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/service/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/service/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/storage/UserStorage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/storage/UserStorageImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/storage/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/storage/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/utils/LoggerConfig.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/utils/ServiceFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/utils/Token.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/utils/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/main/java/utils/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script-dir/jquery-3.6.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javadoc/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/gson-2.9.0.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Monitoring_Service_jar/Monitoring-Service.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monitoring-Service/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postman/Monitoring-Service.postman_collection.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/readings/MeterReadings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/readings/MeterReadings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/user/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/HttpMeterServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/HttpMeterServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/UriEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/UriEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/MeterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/MeterServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/UserStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/UserStorageImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/LoggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/LoggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MeterServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/UserStorageImplTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +187,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,70 +215,90 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Admin/Desktop/Развертывание/Monitoring-Service/lib/gson-2.9.0.jar",
-    "project.structure.last.edited": "Artifacts",
+    "last_opened_file_path": "C:/Users/Admin/Desktop/Развертывание/Monitoring-Service/src/test/testResourses",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.30276135",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "project.kotlinCompiler"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service\src\test\testResourses" />
+      <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service\src\main\resources\db.changelog\v1\service" />
+      <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service\src\main\resources\db.changelog\v1" />
       <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service\src" />
+      <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service\src\main\resources" />
+      <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service" />
+      <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service\src\main\resources\db.changelog\v1\service" />
+      <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service\src\main\resources\db.changelog\v1\app" />
+      <recent name="C:\Users\Admin\Desktop\Развертывание\Monitoring-Service\src\main\resources\db.changelog\v1" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MeterServiceImplTest">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn mvn process-resources " />
+      <command value="mvn mvn process-resources clean" />
+      <command value="mvn process-resources " />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Monitoring-Service" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.Main" />
-      <module name="Monitoring-Service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MeterServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuditStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monitoring-Service" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MeterServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="AuditStorageTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeterServiceImplTest.testRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuditStorageTest.testRecordAction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monitoring-Service" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MeterServiceImplTest" />
-      <option name="METHOD_NAME" value="testRegister" />
+      <option name="MAIN_CLASS_NAME" value="AuditStorageTest" />
+      <option name="METHOD_NAME" value="testRecordAction" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadingsStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monitoring-Service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReadingsStorageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monitoring-Service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserStorageTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MeterServiceImplTest" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.MeterServiceImplTest.testRegister" />
+        <item itemvalue="JUnit.UserStorageTest" />
+        <item itemvalue="JUnit.ReadingsStorageTest" />
+        <item itemvalue="JUnit.AuditStorageTest" />
+        <item itemvalue="JUnit.AuditStorageTest.testRecordAction" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706551162449</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Пересобрал jar">
+      <created>1706552730179</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706552730179</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +361,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="add_jdbc" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -177,23 +383,32 @@
     <MESSAGE value="Добавлен .jar файл, postman тесты, unit тесты, инструкция по развёртыванию" />
     <MESSAGE value="Удалены лишние комментарии" />
     <MESSAGE value="Добавил закрытие exchange" />
-    <MESSAGE value="Пересобрал jar" />
     <MESSAGE value="Изменил структуру и тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменил структуру и тесты" />
+    <MESSAGE value="Пересобрал jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Пересобрал jar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint type="java-method">
           <url>jar://$USER_HOME$/.jdks/corretto-17.0.9/lib/src.zip!/jdk.httpserver/sun/net/httpserver/ServerImpl.java</url>
           <line>449</line>
           <properties class="sun.net.httpserver.ServerImpl.Dispatcher" method="run">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="86" />
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="postgreSQLContainer.initScriptPath.hashIsZero" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: monitoring_service_db
+    ports:
+      - "6541:5432"
+    environment:
+      - POSTGRES_DB=monitoring-service
+      - POSTGRES_USER=iamuser
+      - POSTGRES_PASSWORD=iamroot
