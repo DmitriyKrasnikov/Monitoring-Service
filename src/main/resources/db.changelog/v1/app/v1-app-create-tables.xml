@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
+        logicalFilePath="db/changelog.xml">
+
+    <changeSet id="v1-app-create-tables" author="DmitriyKrasnikov">
+        <sql>
+            CREATE SEQUENCE IF NOT EXISTS users_id_seq;
+        </sql>
+
+        <createTable tableName="users">
+            <column name="user_id" type="int" defaultValueSequenceNext="users_id_seq">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="username" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+
+            <column name="password" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="is_admin" type="BOOLEAN" defaultValueBoolean="false"/>
+        </createTable>
+
+        <createTable tableName="meter_types">
+            <column name="meter_type_id" type="SERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="meter_type" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="meter_readings">
+            <column name="reading_id" type="SERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="user_id" type="INTEGER">
+                <constraints nullable="false" foreignKeyName="fk_user_id" referencedTableName="users"
+                             referencedColumnNames="user_id"/>
+            </column>
+
+            <column name="meter_type_id" type="INTEGER">
+                <constraints nullable="false" foreignKeyName="fk_meter_type_id" referencedTableName="meter_types"
+                             referencedColumnNames="meter_type_id"/>
+            </column>
+
+            <column name="reading" type="DECIMAL(10,2)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="month" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
