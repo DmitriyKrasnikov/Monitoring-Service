@@ -1,5 +1,6 @@
 import dao.user.UserRepositoryImpl;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.utility.DockerImageName;
@@ -31,16 +32,19 @@ public class UserStorageTest {
     private final UserRepositoryImpl userStorage = new UserRepositoryImpl();
 
     @Test
+    @DisplayName("Тестирование метода addNewUser")
     public void testAddNewUser() {
         assertTrue(userStorage.findByEmail("testemail").isPresent());
     }
 
     @Test
+    @DisplayName("Тестирование метода isRegister")
     public void testIsRegister() {
         assertFalse(userStorage.findByEmail("nonexistentemail").isPresent());
     }
 
     @Test
+    @DisplayName("Тестирование метода getUserIdFromName")
     public void testGetUserIdFromName() {
         Integer userId = userStorage.getUserIdFromName("testuser");
 
@@ -48,11 +52,13 @@ public class UserStorageTest {
     }
 
     @Test
+    @DisplayName("Тестирование метода isAdmin")
     public void testIsAdmin() {
         assertFalse(userStorage.findByEmail("testemail").get().isAdmin());
     }
 
     @Test
+    @DisplayName("Тестирование метода validateUser")
     public void testValidateUser() {
         assertTrue(userStorage.validateUser("testemail", "testpassword"));
     }

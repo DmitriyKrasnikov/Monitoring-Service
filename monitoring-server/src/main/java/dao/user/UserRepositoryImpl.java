@@ -14,14 +14,26 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 /**
- * Класс UserRepositoryImpl представляет собой реализацию интерфейса UserRepository.
- * Этот класс использует Map для хранения зарегистрированных пользователей.
+ * Реализация репозитория пользователей.
+ * Этот класс реализует интерфейс UserRepository и предоставляет методы для добавления нового пользователя,
+ * поиска пользователя по электронной почте, получения идентификатора пользователя по имени и валидации пользователя.
+ *
+ * @Loggable Аннотация, указывающая, что вызовы методов этого класса должны быть залогированы.
  */
 @Loggable
 public class UserRepositoryImpl implements UserRepository {
     private static final Logger logger = LoggerConfig.getLogger();
     private final UserMapper userMapper = new UserMapper();
 
+    /**
+     * Подготавливает SQL-запрос для выполнения в базе данных.
+     *
+     * @param connection Объект Connection, представляющий соединение с базой данных.
+     * @param sql SQL-запрос.
+     * @param parameters Параметры SQL-запроса.
+     * @return PreparedStatement Объект PreparedStatement, представляющий подготовленный SQL-запрос.
+     * @throws SQLException В случае ошибки SQL.
+     */
     private PreparedStatement prepareStatement(Connection connection, String sql, String... parameters) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         for (int i = 0; i < parameters.length; i++) {
@@ -30,6 +42,14 @@ public class UserRepositoryImpl implements UserRepository {
         return preparedStatement;
     }
 
+    /**
+     * Добавляет нового пользователя в базу данных.
+     *
+     * @param username Имя пользователя.
+     * @param email Электронная почта пользователя.
+     * @param password Пароль пользователя.
+     * @param salt Соль для хеширования пароля.
+     */
     @Override
     public void addNewUser(String username, String email, String password, String salt) {
         String sql = """
@@ -52,6 +72,12 @@ public class UserRepositoryImpl implements UserRepository {
         }
     }
 
+    /**
+     * Ищет пользователя по электронной почте в базе данных.
+     *
+     * @param email Электронная почта пользователя.
+     * @return Optional<User> Объект User, содержащий данные пользователя, или пустой Optional, если пользователь не найден.
+     */
     @Override
     public Optional<User> findByEmail(String email) {
         String sql = """
@@ -76,6 +102,12 @@ public class UserRepositoryImpl implements UserRepository {
         return Optional.empty();
     }
 
+    /**
+     * Получает идентификатор пользователя по имени из базы данных.
+     *
+     * @param name Имя пользователя.
+     * @return Integer Идентификатор пользователя.
+     */
     @Override
     public Integer getUserIdFromName(String name) {
         String sql = """
@@ -98,6 +130,13 @@ public class UserRepositoryImpl implements UserRepository {
         return null;
     }
 
+    /**
+     * Проверяет, существует ли пользователь с указанной электронной почтой и паролем в базе данных.
+     *
+     * @param email Электронная почта пользователя.
+     * @param password Пароль пользователя.
+     * @return boolean Возвращает true, если пользователь существует, иначе false.
+     */
     @Override
     public boolean validateUser(String email, String password) {
         String sql = """

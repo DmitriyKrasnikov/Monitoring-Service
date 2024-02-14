@@ -9,13 +9,19 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-
+/**
+ * Класс конфигурации клиента.
+ * Загружает настройки хоста и порта из файла свойств.
+ */
 public class ClientConfig {
     public static String HOST;
     public static String PORT;
 
     private static final Logger logger = LoggerFactory.getLogger(LoggerConfig.class);
 
+    /**
+     * Статический блок инициализации для загрузки настроек из файла свойств.
+     */
     static {
         Properties prop = new Properties();
         try (InputStream input = ClientConfig.class.getClassLoader().getResourceAsStream("application.properties")) {

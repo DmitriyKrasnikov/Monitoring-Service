@@ -10,13 +10,21 @@ import java.time.Month;
 import java.util.*;
 
 /**
- * Главный класс приложения, содержащий метод main, который является точкой входа в приложение.
+ * Главный класс приложения.
+ * Обеспечивает интерфейс командной строки для взаимодействия с HTTP-сервером мониторинга.
  */
 public class Main {
     private static final HttpMeterClient client = new HttpMeterClient();
     private static final Scanner scanner = new Scanner(System.in);
     private static final Gson gson = new Gson();
 
+    /**
+     * Главный метод приложения.
+     * Запускает цикл командной строки, позволяющий пользователю взаимодействовать с сервером.
+     *
+     * @param args Аргументы командной строки.
+     * @throws Exception В случае ошибки ввода/вывода или проблем с URI.
+     */
     public static void main(String[] args) throws Exception {
         while (true) {
             System.out.println("""
@@ -74,12 +82,23 @@ public class Main {
         }
     }
 
+    /**
+     * Регистрация пользователя.
+     *
+     * @throws Exception В случае ошибки ввода/вывода или проблем с URI.
+     */
+
     private static void register() throws Exception {
         UserDto user = getUserData();
         HttpResponse<String> response = client.register(user);
         handleResponse(response, "Регистрация прошла успешно", "Ошибка при регистрации");
     }
 
+    /**
+     * Вход пользователя.
+     *
+     * @throws Exception В случае ошибки ввода/вывода или проблем с URI.
+     */
     private static void login() throws Exception {
         UserDto user = getUserData();
         HttpResponse<String> response;
@@ -93,28 +112,53 @@ public class Main {
         handleResponse(response, "Вход выполнен успешно", "Ошибка при входе");
     }
 
+    /**
+     * Выход пользователя.
+     *
+     * @throws Exception В случае ошибки ввода/вывода или проблем с URI.
+     */
     private static void logout() throws Exception {
         HttpResponse<String> response = client.logout();
         handleResponse(response, "Вы вышли из системы", "Ошибка при выходе");
     }
 
+    /**
+     * Получение текущих показаний счетчика.
+     *
+     * @throws Exception В случае ошибки ввода/вывода или проблем с URI.
+     */
     private static void getCurrentReadings() throws Exception {
         HttpResponse<String> response = client.getReadings();
         handleResponseAndPrintReadings(response, "Ошибка при получении показаний");
     }
 
+    /**
+     * Отправка показаний счетчика.
+     *
+     * @throws Exception В случае ошибки ввода/вывода или проблем с URI.
+     */
     private static void postReadings() throws Exception {
         MeterReadings readings = getMeterReadings();
         HttpResponse<String> response = client.postReadings(readings);
         handleResponse(response, "Показания успешно отправлены", "Ошибка при отправке показаний");
     }
 
+    /**
+     * Получение показаний счетчика за месяц.
+     *
+     * @throws Exception В случае ошибки ввода/вывода или проблем с URI.
+     */
     private static void getReadingsByMonth() throws Exception {
         Month month = getMonth();
         HttpResponse<String> response = client.getReadingsByMonth(month);
         handleResponseAndPrintReadings(response, "Ошибка при получении показаний за месяц");
     }
 
+    /**
+     * Получение истории показаний счетчика.
+     *
+     * @throws Exception В случае ошибки ввода/вывода или проблем с URI.
+     */
     private static void getReadingsHistory() throws Exception {
         HttpResponse<String> response = client.getReadingsHistory();
         if (response != null && response.statusCode() == 200) {
@@ -135,6 +179,11 @@ public class Main {
         }
     }
 
+    /**
+     * Получение всех текущих показаний пользователей.
+     *
+     * @throws Exception В случае ошибки ввода/вывода или проблем с URI.
+     */
     private static void getAllReadings() throws Exception {
         HttpResponse<String> response = client.getAllReadings();
         if (response != null && response.statusCode() == 200) {
@@ -156,6 +205,11 @@ public class Main {
         }
     }
 
+    /**
+     * Получение данных пользователя.
+     *
+     * @return UserDto Объект UserDto, содержащий данные пользователя.
+     */
     private static UserDto getUserData() {
         System.out.println("Введите имя пользователя:");
         String username = scanner.nextLine();
@@ -166,6 +220,11 @@ public class Main {
         return new UserDto(username, email, password);
     }
 
+    /**
+     * Получение показаний счетчика.
+     *
+     * @return MeterReadings Объект MeterReadings, содержащий показания счетчика.
+     */
     private static MeterReadings getMeterReadings() {
         Month month = getMonth();
         Map<String, Integer> readings = getReadings();
@@ -173,7 +232,11 @@ public class Main {
         return new MeterReadings(readings, month);
     }
 
-
+    /**
+     * Получение месяца.
+     *
+     * @return Month Месяц.
+     */
     private static Month getMonth() {
         System.out.println("Выберите месяц:");
         String[] months = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"};
@@ -189,6 +252,11 @@ public class Main {
         return Month.values()[monthIndex];
     }
 
+    /**
+     * Получение показаний счетчика от пользователя.
+     *
+     * @return Map<String, Integer> Карта показаний счетчика.
+     */
     private static Map<String, Integer> getReadings() {
         Map<String, Integer> readings = new HashMap<>();
         for (String meterType : METER_TYPE_TRANSLATIONS.keySet()) {
@@ -208,6 +276,13 @@ public class Main {
         return readings;
     }
 
+    /**
+     * Обработка ответа от сервера.
+     *
+     * @param response HttpResponse<String> Ответ сервера.
+     * @param successMessage String Сообщение об успешном выполнении.
+     * @param errorMessage String Сообщение об ошибке.
+     */
     private static void handleResponse(HttpResponse<String> response, String successMessage, String errorMessage) {
         if (response != null && response.statusCode() == 200) {
             System.out.println(successMessage + ": " + response.body());
@@ -216,11 +291,17 @@ public class Main {
         }
     }
 
+    /**
+     * Завершение работы приложения.
+     */
     private static void exitApplication() {
         System.out.println("Приложение завершило работу");
         System.exit(0);
     }
 
+    /**
+     * Карта переводов месяцев.
+     */
     private static final Map<Month, String> MONTH_TRANSLATIONS = Map.ofEntries(
             Map.entry(Month.JANUARY, "Январь"),
             Map.entry(Month.FEBRUARY, "Февраль"),
@@ -236,12 +317,20 @@ public class Main {
             Map.entry(Month.DECEMBER, "Декабрь")
     );
 
+    /**
+     * Карта переводов типов счетчиков.
+     */
     private static final Map<String, String> METER_TYPE_TRANSLATIONS = Map.of(
             "HOT_WATER", "Горячая вода",
             "HEATING", "Отопление",
             "COLD_WATER", "Холодная вода"
     );
 
+    /**
+     * Вывод показаний счетчика.
+     *
+     * @param json String JSON-строка с показаниями счетчика.
+     */
     private static void printMeterReadings(String json) {
         MeterReadings readings = gson.fromJson(json, MeterReadings.class);
         if(readings == null){
@@ -254,6 +343,12 @@ public class Main {
         }
     }
 
+    /**
+     * Обработка ответа от сервера и вывод показаний счетчика.
+     *
+     * @param response HttpResponse<String> Ответ сервера.
+     * @param errorMessage String Сообщение об ошибке.
+     */
     private static void handleResponseAndPrintReadings(HttpResponse<String> response, String errorMessage) {
         if (response != null && response.statusCode() == 200) {
             printMeterReadings(response.body());

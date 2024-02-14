@@ -5,6 +5,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.user.dto.UserDto;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import service.user.UserService;
@@ -22,6 +23,7 @@ public class LoginServletTest {
     private Gson gson;
 
     @BeforeEach
+    @DisplayName("Настройка тестового окружения перед каждым тестом")
     public void setUp() throws IOException {
         userService = Mockito.mock(UserService.class);
         gson = Mockito.mock(Gson.class);
@@ -39,6 +41,7 @@ public class LoginServletTest {
     }
 
     @Test
+    @DisplayName("Тестирование метода doPost - успешный вход пользователя")
     public void testDoPostSuccessfulLogin() throws Exception {
         UserDto userDto = new UserDto("uname", "e@mail.com", "testpassword");
         Mockito.when(gson.fromJson(Mockito.any(BufferedReader.class), Mockito.eq(UserDto.class))).thenReturn(userDto);

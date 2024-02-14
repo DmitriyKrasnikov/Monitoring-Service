@@ -5,6 +5,9 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
 
+    <!--
+    Вставляет начальные данные в таблицу типов счетчиков.
+    -->
     <changeSet id="v1-app-insert-data" author="DmitriyKrasnikov">
         <insert tableName="meter_types">
             <column name="meter_type" value="HEATING"/>

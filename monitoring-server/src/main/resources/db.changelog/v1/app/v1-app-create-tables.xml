@@ -7,12 +7,14 @@
         logicalFilePath="db/changelog.xml">
 
     <changeSet id="v1-app-create-tables" author="DmitriyKrasnikov">
+        <!-- Создает последовательности для идентификаторов пользователей, типов счетчиков и показаний счетчиков -->
         <sql>
             CREATE SEQUENCE IF NOT EXISTS users_id_seq;
             CREATE SEQUENCE IF NOT EXISTS meter_types_id_seq;
             CREATE SEQUENCE IF NOT EXISTS meter_readings_id_seq;
         </sql>
 
+        <!-- Создает таблицу пользователей -->
         <createTable tableName="users">
             <column name="user_id" type="int" defaultValueSequenceNext="users_id_seq">
                 <constraints primaryKey="true" nullable="false"/>
@@ -37,6 +39,7 @@
             <column name="is_admin" type="BOOLEAN" defaultValueBoolean="false"/>
         </createTable>
 
+        <!-- Создает таблицу типов счетчиков -->
         <createTable tableName="meter_types">
             <column name="meter_type_id" type="INTEGER" defaultValueSequenceNext="meter_types_id_seq">
                 <constraints primaryKey="true" nullable="false"/>
@@ -47,6 +50,7 @@
             </column>
         </createTable>
 
+        <!-- Создает таблицу показаний счетчиков -->
         <createTable tableName="meter_readings">
             <column name="reading_id" type="INTEGER" defaultValueSequenceNext="meter_readings_id_seq">
                 <constraints primaryKey="true" nullable="false"/>

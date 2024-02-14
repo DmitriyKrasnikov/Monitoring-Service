@@ -4,6 +4,7 @@ import model.audit.ActionType;
 import model.audit.AuditLog;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.utility.DockerImageName;
@@ -42,6 +43,7 @@ public class AuditStorageTest {
     private final UserRepositoryImpl userStorage = new UserRepositoryImpl();
 
     @Before
+    @DisplayName("Инициализация базы данных перед каждым тестом")
     public void initializeDatabase() {
         String url = postgreSQLContainer.getJdbcUrl();
         String user = postgreSQLContainer.getUsername();
@@ -58,6 +60,7 @@ public class AuditStorageTest {
     }
 
     @Test
+    @DisplayName("Тестирование метода recordAction")
     public void testRecordAction() {
         userStorage.addNewUser("testuser", "testemail", "testpassword", "testSalt");
         auditStorage.recordAction(new AuditLog(1, ActionType.LOGIN, LocalDateTime.now(), "Test action"));
@@ -66,11 +69,10 @@ public class AuditStorageTest {
     }
 
     @Test
+    @DisplayName("Тестирование метода getUserActions")
     public void testGetUserActions() {
         List<AuditLog> userActions = auditStorage.getUserActions(1);
 
         assertNotNull(userActions);
     }
 }
-
-

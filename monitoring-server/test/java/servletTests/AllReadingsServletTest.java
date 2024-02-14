@@ -5,6 +5,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.readings.MeterReadings;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import service.reading.MeterService;
@@ -25,6 +26,7 @@ public class AllReadingsServletTest {
     private Gson gson;
 
     @BeforeEach
+    @DisplayName("Настройка тестового окружения перед каждым тестом")
     public void setUp() throws IOException {
         meterService = Mockito.mock(MeterService.class);
         gson = Mockito.mock(Gson.class);
@@ -39,6 +41,7 @@ public class AllReadingsServletTest {
     }
 
     @Test
+    @DisplayName("Тестирование метода doGet для администратора")
     public void testDoGetAdmin() throws Exception {
         Mockito.when(request.getHeader("Authorization")).thenReturn("Bearer MToZQG1haWwuY29tOnVuYW1lOnRydWU=");
         Map<String, MeterReadings> readings = new HashMap<>();
@@ -51,6 +54,7 @@ public class AllReadingsServletTest {
     }
 
     @Test
+    @DisplayName("Тестирование метода doGet для не администратора")
     public void testDoGetNonAdmin() throws Exception {
         Mockito.when(request.getHeader("Authorization")).thenReturn("Bearer MToZQG1haWwuY29tOnVuYW1lOmZhbHNl");
 

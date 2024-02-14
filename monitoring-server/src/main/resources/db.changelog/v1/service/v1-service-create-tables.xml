@@ -6,6 +6,7 @@
          https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
 
     <changeSet id="v1-service-create-tables" author="DmitriyKrasnikov">
+        <!-- Создает таблицу типов действий аудита -->
         <createTable schemaName="audit_schema" tableName="act_types">
             <column name="action_type_id" type="SERIAL">
                 <constraints primaryKey="true" nullable="false"/>
@@ -15,6 +16,7 @@
             </column>
         </createTable>
 
+        <!-- Создает таблицу журналов аудита -->
         <createTable schemaName="audit_schema" tableName="audit_logs">
             <column name="log_id" type="SERIAL">
                 <constraints primaryKey="true" nullable="false"/>
@@ -32,6 +34,7 @@
             <column name="related_data" type="VARCHAR(255)"/>
         </createTable>
 
+        <!-- Добавляет внешний ключ для связи между таблицами журналов аудита и типов действий аудита -->
         <sql>
             ALTER TABLE audit_schema.audit_logs
             ADD CONSTRAINT fk_action_type_id

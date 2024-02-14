@@ -3,6 +3,7 @@ package servletTests;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import service.user.UserService;
@@ -20,6 +21,7 @@ public class LogoutServletTest {
     private UserService userService;
 
     @BeforeEach
+    @DisplayName("Настройка тестового окружения перед каждым тестом")
     public void setUp() throws IOException {
         userService = Mockito.mock(UserService.class);
         ServiceFactory.setUserService(userService);
@@ -32,6 +34,7 @@ public class LogoutServletTest {
     }
 
     @Test
+    @DisplayName("Тестирование метода doGet - успешный выход пользователя")
     public void testDoGet() throws Exception {
         Mockito.when(request.getHeader("Authorization")).thenReturn("Bearer MTplQG1haWwuY29tOnVuYW1lOmZhbHNl");
         Mockito.when(userService.logout("uname")).thenReturn("You are logged out");

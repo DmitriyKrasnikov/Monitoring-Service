@@ -12,10 +12,21 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Реализация репозитория аудита.
+ * Этот класс реализует интерфейс AuditRepository и предоставляет методы для записи действий пользователя и получения действий пользователя.
+ *
+ * @Loggable Аннотация, указывающая, что вызовы методов этого класса должны быть залогированы.
+ */
 @Loggable
 public class AuditRepositoryImpl implements AuditRepository {
     private static final Logger logger = LoggerConfig.getLogger();
 
+    /**
+     * Записывает действие пользователя в базу данных.
+     *
+     * @param auditLog Объект AuditLog, содержащий информацию о действии пользователя.
+     */
     @Override
     public void recordAction(AuditLog auditLog) {
         String sql = """
@@ -51,6 +62,12 @@ public class AuditRepositoryImpl implements AuditRepository {
         }
     }
 
+    /**
+     * Получает действия пользователя из базы данных.
+     *
+     * @param userId Идентификатор пользователя.
+     * @return List<AuditLog> Список действий пользователя.
+     */
     @Override
     public List<AuditLog> getUserActions(int userId) {
         String sql = """
@@ -90,6 +107,15 @@ public class AuditRepositoryImpl implements AuditRepository {
         return auditLogs;
     }
 
+    /**
+     * Подготавливает SQL-запрос для выполнения в базе данных.
+     *
+     * @param connection Объект Connection, представляющий соединение с базой данных.
+     * @param sql SQL-запрос.
+     * @param parameters Параметры SQL-запроса.
+     * @return PreparedStatement Объект PreparedStatement, представляющий подготовленный SQL-запрос.
+     * @throws SQLException В случае ошибки SQL.
+     */
     private PreparedStatement prepareStatement(Connection connection, String sql, Object... parameters) throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement(sql);
         for (int i = 0; i < parameters.length; i++) {

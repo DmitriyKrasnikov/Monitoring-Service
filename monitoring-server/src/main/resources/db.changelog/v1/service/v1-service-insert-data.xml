@@ -6,6 +6,9 @@
          https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd"
         logicalFilePath="db/changelog.xml">
 
+    <!--
+    Вставляет начальные данные в таблицу типов действий аудита.
+    -->
     <changeSet id="v1-service-insert-data" author="DmitriyKrasnikov">
         <insert schemaName="audit_schema" tableName="act_types">
             <column name="action_type" value="LOGIN"/>

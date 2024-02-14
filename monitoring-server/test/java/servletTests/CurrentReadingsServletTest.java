@@ -5,6 +5,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.readings.MeterReadings;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import service.reading.MeterService;
@@ -23,6 +24,7 @@ public class CurrentReadingsServletTest {
     private Gson gson;
 
     @BeforeEach
+    @DisplayName("Настройка тестового окружения перед каждым тестом")
     public void setUp() throws IOException {
         meterService = Mockito.mock(MeterService.class);
         gson = Mockito.mock(Gson.class);
@@ -40,6 +42,7 @@ public class CurrentReadingsServletTest {
     }
 
     @Test
+    @DisplayName("Тестирование метода doGet - получение текущих показаний")
     public void testDoGet() throws Exception {
         Mockito.when(request.getHeader("Authorization")).thenReturn("Bearer MToZQG1haWwuY29tOnVuYW1lOmZhbHNl");
         MeterReadings readings = new MeterReadings(new HashMap<>(), Month.JANUARY);
@@ -52,6 +55,7 @@ public class CurrentReadingsServletTest {
     }
 
     @Test
+    @DisplayName("Тестирование метода doPost - добавление текущих показаний")
     public void testDoPost() throws Exception {
         // Настройка макетов
         Mockito.when(request.getHeader("Authorization")).thenReturn("Bearer MToZQG1haWwuY29tOnVuYW1lOmZhbHNl");
