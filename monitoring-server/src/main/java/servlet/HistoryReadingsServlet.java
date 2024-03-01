@@ -21,8 +21,7 @@ import java.io.IOException;
 @WebServlet("/meter/readings/history")
 public class HistoryReadingsServlet extends HttpServlet {
     /**
-     * Сервис для взаимодействия со счетчиками.
-     */
+     * Сервис для взаимодействия со счетчиками.*/
     private MeterService meterService;
 
     /**
